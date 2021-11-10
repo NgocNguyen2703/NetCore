@@ -14,6 +14,14 @@ public class MvcMovieContext : DbContext
         }
 
         public DbSet<NETCORE.Models.Movie> Movie { get; set; }
+
+        public DbSet<NETCORE.Models.Person> Person { get; set; }
+
+        public DbSet<NETCORE.Models.Student> Student { get; set; }
+
+        public DbSet<NETCORE.Models.Employee> Employee { get; set; }
+
+        public DbSet<NETCORE.Models.Product> Product { get; set; }
     }
 }
 
