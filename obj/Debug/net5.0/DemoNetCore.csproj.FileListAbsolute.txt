@@ -371,3 +371,8 @@ C:\NETCORE\DemoNetCore\obj\Debug\net5.0\Razor\Views\DonHang\Delete.cshtml.g.cs
 C:\NETCORE\DemoNetCore\obj\Debug\net5.0\Razor\Views\DonHang\Details.cshtml.g.cs
 C:\NETCORE\DemoNetCore\obj\Debug\net5.0\Razor\Views\DonHang\Edit.cshtml.g.cs
 C:\NETCORE\DemoNetCore\obj\Debug\net5.0\Razor\Views\DonHang\Index.cshtml.g.cs
+C:\NETCORE\DemoNetCore\obj\Debug\net5.0\Razor\Views\KetQua\Create.cshtml.g.cs
+C:\NETCORE\DemoNetCore\obj\Debug\net5.0\Razor\Views\KetQua\Delete.cshtml.g.cs
+C:\NETCORE\DemoNetCore\obj\Debug\net5.0\Razor\Views\KetQua\Details.cshtml.g.cs
+C:\NETCORE\DemoNetCore\obj\Debug\net5.0\Razor\Views\KetQua\Edit.cshtml.g.cs
+C:\NETCORE\DemoNetCore\obj\Debug\net5.0\Razor\Views\KetQua\Index.cshtml.g.cs

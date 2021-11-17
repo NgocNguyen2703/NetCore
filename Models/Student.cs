@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using System.Security.AccessControl;
 using System;
 using System.ComponentModel.DataAnnotations;
@@ -16,5 +17,6 @@ namespace NETCORE.Models
         public string Name { get; set; }
         [Display(Name = "Địa chỉ" )]
         public string Address { get; set; }
+        public ICollection<KetQua> KetQuas { get; set; }
     }
 }
