@@ -366,3 +366,8 @@ C:\NETCORE\DemoNetCore\obj\Debug\net5.0\Razor\Views\Product\Delete.cshtml.g.cs
 C:\NETCORE\DemoNetCore\obj\Debug\net5.0\Razor\Views\Product\Details.cshtml.g.cs
 C:\NETCORE\DemoNetCore\obj\Debug\net5.0\Razor\Views\Product\Edit.cshtml.g.cs
 C:\NETCORE\DemoNetCore\obj\Debug\net5.0\Razor\Views\Product\Index.cshtml.g.cs
+C:\NETCORE\DemoNetCore\obj\Debug\net5.0\Razor\Views\DonHang\Create.cshtml.g.cs
+C:\NETCORE\DemoNetCore\obj\Debug\net5.0\Razor\Views\DonHang\Delete.cshtml.g.cs
+C:\NETCORE\DemoNetCore\obj\Debug\net5.0\Razor\Views\DonHang\Details.cshtml.g.cs
+C:\NETCORE\DemoNetCore\obj\Debug\net5.0\Razor\Views\DonHang\Edit.cshtml.g.cs
+C:\NETCORE\DemoNetCore\obj\Debug\net5.0\Razor\Views\DonHang\Index.cshtml.g.cs

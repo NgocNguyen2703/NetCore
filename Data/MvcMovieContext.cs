@@ -22,6 +22,8 @@ public class MvcMovieContext : DbContext
         public DbSet<NETCORE.Models.Employee> Employee { get; set; }
 
         public DbSet<NETCORE.Models.Product> Product { get; set; }
+
+        public DbSet<NETCORE.Models.DonHang> DonHang { get; set; }
     }
 }
 
