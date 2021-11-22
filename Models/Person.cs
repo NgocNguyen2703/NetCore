@@ -10,6 +10,7 @@ namespace NETCORE.Models
     {
         [Key]
         [Display(Name = "Mã KH" )]
+        [Required(ErrorMessage = "ID không được để trống")]
         public string Id { get; set; }
         [Display(Name = "Tên KH" )]
         public string Name { get; set; }

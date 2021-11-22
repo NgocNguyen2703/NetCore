@@ -2,13 +2,13 @@
 
 namespace DemoNetCore.Migrations
 {
-    public partial class PhongBan : Migration
+    public partial class Edit_Table_HoaDon : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.AddColumn<string>(
-                name: "Address",
-                table: "Employees",
+                name: "NhanVien",
+                table: "Products",
                 type: "TEXT",
                 nullable: true);
         }
@@ -16,8 +16,8 @@ namespace DemoNetCore.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropColumn(
-                name: "Address",
-                table: "Employees");
+                name: "NhanVien",
+                table: "Products");
         }
     }
 }

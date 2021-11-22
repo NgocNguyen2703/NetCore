@@ -2,15 +2,17 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using NETCORE.Data;
 
 namespace DemoNetCore.Migrations
 {
     [DbContext(typeof(MvcMovieContext))]
-    partial class MvcMovieContextModelSnapshot : ModelSnapshot
+    [Migration("20211122130146_Create_Table_HoaDon")]
+    partial class Create_Table_HoaDon
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -186,9 +188,6 @@ namespace DemoNetCore.Migrations
                     b.HasBaseType("NETCORE.Models.Product");
 
                     b.Property<string>("IdHoaDon")
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("NhanVien")
                         .HasColumnType("TEXT");
 
                     b.ToTable("Products");

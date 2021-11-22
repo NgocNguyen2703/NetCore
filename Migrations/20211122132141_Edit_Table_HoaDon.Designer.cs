@@ -9,8 +9,8 @@ using NETCORE.Data;
 namespace DemoNetCore.Migrations
 {
     [DbContext(typeof(MvcMovieContext))]
-    [Migration("20211122075750_PhongBan")]
-    partial class PhongBan
+    [Migration("20211122132141_Edit_Table_HoaDon")]
+    partial class Edit_Table_HoaDon
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -23,10 +23,6 @@ namespace DemoNetCore.Migrations
                     b.Property<string>("Id")
                         .HasColumnType("TEXT");
 
-                    b.Property<string>("Discriminator")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
-
                     b.Property<string>("Name")
                         .HasColumnType("TEXT");
 
@@ -36,8 +32,6 @@ namespace DemoNetCore.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Employees");
-
-                    b.HasDiscriminator<string>("Discriminator").HasValue("Employee");
                 });
 
             modelBuilder.Entity("NETCORE.Models.KetQua", b =>
@@ -103,9 +97,40 @@ namespace DemoNetCore.Migrations
                     b.HasDiscriminator<string>("Discriminator").HasValue("Person");
                 });
 
+            modelBuilder.Entity("NETCORE.Models.PhieuXuat", b =>
+                {
+                    b.Property<string>("Id")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Name")
+                        .HasColumnType("TEXT");
+
+                    b.Property<DateTime>("NgayXuat")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("ProductId")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Quantity")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("UnitPrice")
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ProductId");
+
+                    b.ToTable("PhieuXuats");
+                });
+
             modelBuilder.Entity("NETCORE.Models.Product", b =>
                 {
                     b.Property<string>("Id")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Discriminator")
+                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Name")
@@ -120,6 +145,8 @@ namespace DemoNetCore.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Products");
+
+                    b.HasDiscriminator<string>("Discriminator").HasValue("Product");
                 });
 
             modelBuilder.Entity("NETCORE.Models.Student", b =>
@@ -136,21 +163,6 @@ namespace DemoNetCore.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Students");
-                });
-
-            modelBuilder.Entity("NETCORE.Models.PhongBan", b =>
-                {
-                    b.HasBaseType("NETCORE.Models.Employee");
-
-                    b.Property<string>("Address")
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("IdPhong")
-                        .HasColumnType("TEXT");
-
-                    b.ToTable("Employees");
-
-                    b.HasDiscriminator().HasValue("PhongBan");
                 });
 
             modelBuilder.Entity("NETCORE.Models.DonHang", b =>
@@ -171,6 +183,21 @@ namespace DemoNetCore.Migrations
                     b.HasDiscriminator().HasValue("DonHang");
                 });
 
+            modelBuilder.Entity("NETCORE.Models.HoaDon", b =>
+                {
+                    b.HasBaseType("NETCORE.Models.Product");
+
+                    b.Property<string>("IdHoaDon")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("NhanVien")
+                        .HasColumnType("TEXT");
+
+                    b.ToTable("Products");
+
+                    b.HasDiscriminator().HasValue("HoaDon");
+                });
+
             modelBuilder.Entity("NETCORE.Models.KetQua", b =>
                 {
                     b.HasOne("NETCORE.Models.Student", "Student")
@@ -178,6 +205,20 @@ namespace DemoNetCore.Migrations
                         .HasForeignKey("StudentId");
 
                     b.Navigation("Student");
+                });
+
+            modelBuilder.Entity("NETCORE.Models.PhieuXuat", b =>
+                {
+                    b.HasOne("NETCORE.Models.Product", "Product")
+                        .WithMany("PhieuXuats")
+                        .HasForeignKey("ProductId");
+
+                    b.Navigation("Product");
+                });
+
+            modelBuilder.Entity("NETCORE.Models.Product", b =>
+                {
+                    b.Navigation("PhieuXuats");
                 });
 
             modelBuilder.Entity("NETCORE.Models.Student", b =>

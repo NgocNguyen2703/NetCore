@@ -56,12 +56,19 @@ namespace DemoNetCore.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Id,Name")] Person person)
         {
-            if (ModelState.IsValid)
+            try {
+                if (ModelState.IsValid)
             {
                 _context.Add(person);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
+
+            }
+            catch {
+                ModelState.AddModelError("", "ID đã tồn tại");
+            }
+            
             return View(person);
         }
 

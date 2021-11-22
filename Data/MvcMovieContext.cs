@@ -27,9 +27,9 @@ public class MvcMovieContext : DbContext
 
         public DbSet<NETCORE.Models.KetQua> KetQua { get; set; }
 
-        public DbSet<NETCORE.Models.PhongBan> PhongBan { get; set; }
-
         public DbSet<NETCORE.Models.PhieuXuat> PhieuXuat { get; set; }
+
+        public DbSet<NETCORE.Models.HoaDon> HoaDon { get; set; }
     }
 }
 

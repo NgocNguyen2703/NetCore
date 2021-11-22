@@ -10,22 +10,22 @@ using NETCORE.Models;
 
 namespace DemoNetCore.Controllers
 {
-    public class PhongBanController : Controller
+    public class HoaDonController : Controller
     {
         private readonly MvcMovieContext _context;
 
-        public PhongBanController(MvcMovieContext context)
+        public HoaDonController(MvcMovieContext context)
         {
             _context = context;
         }
 
-        // GET: PhongBan
+        // GET: HoaDon
         public async Task<IActionResult> Index()
         {
-            return View(await _context.PhongBan.ToListAsync());
+            return View(await _context.HoaDon.ToListAsync());
         }
 
-        // GET: PhongBan/Details/5
+        // GET: HoaDon/Details/5
         public async Task<IActionResult> Details(string id)
         {
             if (id == null)
@@ -33,39 +33,39 @@ namespace DemoNetCore.Controllers
                 return NotFound();
             }
 
-            var phongBan = await _context.PhongBan
+            var hoaDon = await _context.HoaDon
                 .FirstOrDefaultAsync(m => m.Id == id);
-            if (phongBan == null)
+            if (hoaDon == null)
             {
                 return NotFound();
             }
 
-            return View(phongBan);
+            return View(hoaDon);
         }
 
-        // GET: PhongBan/Create
+        // GET: HoaDon/Create
         public IActionResult Create()
         {
             return View();
         }
 
-        // POST: PhongBan/Create
+        // POST: HoaDon/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("IdPhong,Name,PhoneNumber,Id")] PhongBan phongBan)
+        public async Task<IActionResult> Create([Bind("IdHoaDon,UnitPrice,Quantity,Id,Name")] HoaDon hoaDon)
         {
             if (ModelState.IsValid)
             {
-                _context.Add(phongBan);
+                _context.Add(hoaDon);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            return View(phongBan);
+            return View(hoaDon);
         }
 
-        // GET: PhongBan/Edit/5
+        // GET: HoaDon/Edit/5
         public async Task<IActionResult> Edit(string id)
         {
             if (id == null)
@@ -73,22 +73,22 @@ namespace DemoNetCore.Controllers
                 return NotFound();
             }
 
-            var phongBan = await _context.PhongBan.FindAsync(id);
-            if (phongBan == null)
+            var hoaDon = await _context.HoaDon.FindAsync(id);
+            if (hoaDon == null)
             {
                 return NotFound();
             }
-            return View(phongBan);
+            return View(hoaDon);
         }
 
-        // POST: PhongBan/Edit/5
+        // POST: HoaDon/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(string id, [Bind("IdPhong,Name,PhoneNumber,Id")] PhongBan phongBan)
+        public async Task<IActionResult> Edit(string id, [Bind("IdHoaDon,UnitPrice,Quantity,Id,Name")] HoaDon hoaDon)
         {
-            if (id != phongBan.Id)
+            if (id != hoaDon.Id)
             {
                 return NotFound();
             }
@@ -97,12 +97,12 @@ namespace DemoNetCore.Controllers
             {
                 try
                 {
-                    _context.Update(phongBan);
+                    _context.Update(hoaDon);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!PhongBanExists(phongBan.Id))
+                    if (!HoaDonExists(hoaDon.Id))
                     {
                         return NotFound();
                     }
@@ -113,10 +113,10 @@ namespace DemoNetCore.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            return View(phongBan);
+            return View(hoaDon);
         }
 
-        // GET: PhongBan/Delete/5
+        // GET: HoaDon/Delete/5
         public async Task<IActionResult> Delete(string id)
         {
             if (id == null)
@@ -124,30 +124,30 @@ namespace DemoNetCore.Controllers
                 return NotFound();
             }
 
-            var phongBan = await _context.PhongBan
+            var hoaDon = await _context.HoaDon
                 .FirstOrDefaultAsync(m => m.Id == id);
-            if (phongBan == null)
+            if (hoaDon == null)
             {
                 return NotFound();
             }
 
-            return View(phongBan);
+            return View(hoaDon);
         }
 
-        // POST: PhongBan/Delete/5
+        // POST: HoaDon/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(string id)
         {
-            var phongBan = await _context.PhongBan.FindAsync(id);
-            _context.PhongBan.Remove(phongBan);
+            var hoaDon = await _context.HoaDon.FindAsync(id);
+            _context.HoaDon.Remove(hoaDon);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
-        private bool PhongBanExists(string id)
+        private bool HoaDonExists(string id)
         {
-            return _context.PhongBan.Any(e => e.Id == id);
+            return _context.HoaDon.Any(e => e.Id == id);
         }
     }
 }
