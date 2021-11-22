@@ -376,3 +376,13 @@ C:\NETCORE\DemoNetCore\obj\Debug\net5.0\Razor\Views\KetQua\Delete.cshtml.g.cs
 C:\NETCORE\DemoNetCore\obj\Debug\net5.0\Razor\Views\KetQua\Details.cshtml.g.cs
 C:\NETCORE\DemoNetCore\obj\Debug\net5.0\Razor\Views\KetQua\Edit.cshtml.g.cs
 C:\NETCORE\DemoNetCore\obj\Debug\net5.0\Razor\Views\KetQua\Index.cshtml.g.cs
+C:\NETCORE\DemoNetCore\obj\Debug\net5.0\Razor\Views\PhongBan\Create.cshtml.g.cs
+C:\NETCORE\DemoNetCore\obj\Debug\net5.0\Razor\Views\PhongBan\Delete.cshtml.g.cs
+C:\NETCORE\DemoNetCore\obj\Debug\net5.0\Razor\Views\PhongBan\Details.cshtml.g.cs
+C:\NETCORE\DemoNetCore\obj\Debug\net5.0\Razor\Views\PhongBan\Edit.cshtml.g.cs
+C:\NETCORE\DemoNetCore\obj\Debug\net5.0\Razor\Views\PhongBan\Index.cshtml.g.cs
+C:\NETCORE\DemoNetCore\obj\Debug\net5.0\Razor\Views\PhieuXuat\Create.cshtml.g.cs
+C:\NETCORE\DemoNetCore\obj\Debug\net5.0\Razor\Views\PhieuXuat\Delete.cshtml.g.cs
+C:\NETCORE\DemoNetCore\obj\Debug\net5.0\Razor\Views\PhieuXuat\Details.cshtml.g.cs
+C:\NETCORE\DemoNetCore\obj\Debug\net5.0\Razor\Views\PhieuXuat\Edit.cshtml.g.cs
+C:\NETCORE\DemoNetCore\obj\Debug\net5.0\Razor\Views\PhieuXuat\Index.cshtml.g.cs

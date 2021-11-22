@@ -2,15 +2,17 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using NETCORE.Data;
 
 namespace DemoNetCore.Migrations
 {
     [DbContext(typeof(MvcMovieContext))]
-    partial class MvcMovieContextModelSnapshot : ModelSnapshot
+    [Migration("20211122075750_PhongBan")]
+    partial class PhongBan
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -101,33 +103,6 @@ namespace DemoNetCore.Migrations
                     b.HasDiscriminator<string>("Discriminator").HasValue("Person");
                 });
 
-            modelBuilder.Entity("NETCORE.Models.PhieuXuat", b =>
-                {
-                    b.Property<string>("Id")
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("Name")
-                        .HasColumnType("TEXT");
-
-                    b.Property<DateTime>("NgayXuat")
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("ProductId")
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("Quantity")
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("UnitPrice")
-                        .HasColumnType("TEXT");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("ProductId");
-
-                    b.ToTable("PhieuXuats");
-                });
-
             modelBuilder.Entity("NETCORE.Models.Product", b =>
                 {
                     b.Property<string>("Id")
@@ -203,20 +178,6 @@ namespace DemoNetCore.Migrations
                         .HasForeignKey("StudentId");
 
                     b.Navigation("Student");
-                });
-
-            modelBuilder.Entity("NETCORE.Models.PhieuXuat", b =>
-                {
-                    b.HasOne("NETCORE.Models.Product", "Product")
-                        .WithMany("PhieuXuats")
-                        .HasForeignKey("ProductId");
-
-                    b.Navigation("Product");
-                });
-
-            modelBuilder.Entity("NETCORE.Models.Product", b =>
-                {
-                    b.Navigation("PhieuXuats");
                 });
 
             modelBuilder.Entity("NETCORE.Models.Student", b =>

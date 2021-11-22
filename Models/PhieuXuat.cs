@@ -1,4 +1,3 @@
-using System.Collections.Generic;
 using System.Security.AccessControl;
 using System;
 using System.ComponentModel.DataAnnotations;
@@ -6,8 +5,8 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace NETCORE.Models
 {
-    [Table("Products")]
-    public class Product
+    [Table("PhieuXuats")]
+    public class PhieuXuat
     {
         [Key]
         [Display(Name = "Mã Sản phẩm" )]
@@ -18,7 +17,8 @@ namespace NETCORE.Models
         public string UnitPrice { get; set; }
         [Display(Name = "Số lượng" )]
         public string Quantity { get; set; }
-        public ICollection<PhieuXuat> PhieuXuats {get; set; }
-
+        [Display(Name = "Ngay xuat" )]
+        public DateTime NgayXuat { get; set; }
+        public Product Product {get; set; }
     }
 }
