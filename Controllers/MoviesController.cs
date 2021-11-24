@@ -21,41 +21,35 @@ namespace DemoNetCore.Controllers
         }
 
         // GET: Movies
-        public async Task<IActionResult> Index(string SearchString)
-        {
-            //select danh sách bản ghi Movie trong Db
-            var moviesList = from m in _context.Movie
+        // GET: Movies
+public async Task<IActionResult> Index(string movieGenre, string SearchString)
+{
+    // Use LINQ to get list of genres.
+    IQueryable<string> genreQuery = from m in _context.Movie
+                                    orderby m.Genre
+                                    select m.Genre;
+
+    var movies = from m in _context.Movie
                  select m;
-            if (!String.IsNullOrEmpty(SearchString)){
-                moviesList = moviesList.Where(m => m.Title.Contains(SearchString));
-            }
-            //Tra ve List movie voi dieu kien Title co chua tu khoa tim kiem (bat dong bo)
-            return View(await moviesList.ToListAsync());
-        }
 
-        // GET: Movies/Details/5
-        public async Task<IActionResult> Details(int? id)
-        {
-            if (id == null)
-            {
-                return NotFound();
-            }
+    if (!string.IsNullOrEmpty(SearchString))
+    {
+        movies = movies.Where(s => s.Title.Contains(SearchString));
+    }
 
-            var movie = await _context.Movie
-                .FirstOrDefaultAsync(m => m.Id == id);
-            if (movie == null)
-            {
-                return NotFound();
-            }
+    if (!string.IsNullOrEmpty(movieGenre))
+    {
+        movies = movies.Where(x => x.Genre == movieGenre);
+    }
 
-            return View(movie);
-        }
+    var movieGenreVM = new MovieGenreViewModel
+    {
+        Genres = new SelectList(await genreQuery.Distinct().ToListAsync()),
+        Movies = await movies.ToListAsync()
+    };
 
-        // GET: Movies/Create
-        public IActionResult Create()
-        {
-            return View();
-        }
+    return View(movieGenreVM);
+}
 
         // POST: Movies/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
