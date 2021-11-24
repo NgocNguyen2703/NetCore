@@ -1,3 +1,4 @@
+using System.Text;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,9 +21,16 @@ namespace DemoNetCore.Controllers
         }
 
         // GET: Movies
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string SearchString)
         {
-            return View(await _context.Movie.ToListAsync());
+            //select danh sách bản ghi Movie trong Db
+            var moviesList = from m in _context.Movie
+                 select m;
+            if (!String.IsNullOrEmpty(SearchString)){
+                moviesList = moviesList.Where(m => m.Title.Contains(SearchString));
+            }
+            //Tra ve List movie voi dieu kien Title co chua tu khoa tim kiem (bat dong bo)
+            return View(await moviesList.ToListAsync());
         }
 
         // GET: Movies/Details/5
