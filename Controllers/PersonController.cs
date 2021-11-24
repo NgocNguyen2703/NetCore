@@ -22,14 +22,14 @@ namespace DemoNetCore.Controllers
         // GET: Person
         public async Task<IActionResult> Index(string SearchString)
         {
-            var person = from k in _context.Person
+            var persons = from k in _context.Person
                             select k;
 
             if(!String.IsNullOrEmpty(SearchString))
             {
-            person = person.Where(s => s.Name.ToLower().Contains(SearchString.ToLower()));
+            persons = persons.Where(s => s.Name.ToLower().Contains(SearchString.ToLower()));
             }
-            return View(await _context.Person.ToListAsync());
+            return View(await persons.ToListAsync());
         }
 
         // GET: Person/Details/5
