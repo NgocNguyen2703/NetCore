@@ -2,15 +2,17 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using NETCORE.Data;
 
 namespace DemoNetCore.Migrations
 {
     [DbContext(typeof(MvcMovieContext))]
-    partial class MvcMovieContextModelSnapshot : ModelSnapshot
+    [Migration("20211129124432_Create_Table_Student_School")]
+    partial class Create_Table_Student_School
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

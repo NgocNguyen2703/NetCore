@@ -50,13 +50,36 @@ public async Task<IActionResult> Index(string movieGenre, string SearchString)
 
     return View(movieGenreVM);
 }
+    /// GET: Movies/Details/5
+        public async Task<IActionResult> Details(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var movie = await _context.Movie
+                .FirstOrDefaultAsync(m => m.Id == id);
+            if (movie == null)
+            {
+                return NotFound();
+            }
+
+            return View(movie);
+        }
+
+        // GET: Movies/Create
+        public IActionResult Create()
+        {
+            return View();
+        }
 
         // POST: Movies/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Title,ReleaseDate,Genre,Price")] Movie movie)
+        public async Task<IActionResult> Create([Bind("Id,Title,ReleaseDate,Genre,Price,Rating")] Movie movie)
         {
             if (ModelState.IsValid)
             {
@@ -88,7 +111,7 @@ public async Task<IActionResult> Index(string movieGenre, string SearchString)
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Title,ReleaseDate,Genre,Price")] Movie movie)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Title,ReleaseDate,Genre,Price,Rating")] Movie movie)
         {
             if (id != movie.Id)
             {

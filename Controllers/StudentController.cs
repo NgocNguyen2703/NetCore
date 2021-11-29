@@ -54,7 +54,7 @@ namespace DemoNetCore.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Name,Address")] Student student)
+        public async Task<IActionResult> Create([Bind("Id,Name,Address,School")] Student student)
         {
             if (ModelState.IsValid)
             {
@@ -86,7 +86,7 @@ namespace DemoNetCore.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(string id, [Bind("Id,Name,Address")] Student student)
+        public async Task<IActionResult> Edit(string id, [Bind("Id,Name,Address,School")] Student student)
         {
             if (id != student.Id)
             {
