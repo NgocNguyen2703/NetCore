@@ -1,27 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\NETCORE\\DemoNetCore\\DemoNetCore.csproj": {}
+    "C:\\Users\\HI\\Documents\\MaNguonMo\\NetCore\\DemoNetCore.csproj": {}
   },
   "projects": {
-    "C:\\NETCORE\\DemoNetCore\\DemoNetCore.csproj": {
+    "C:\\Users\\HI\\Documents\\MaNguonMo\\NetCore\\DemoNetCore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\NETCORE\\DemoNetCore\\DemoNetCore.csproj",
+        "projectUniqueName": "C:\\Users\\HI\\Documents\\MaNguonMo\\NetCore\\DemoNetCore.csproj",
         "projectName": "DemoNetCore",
-        "projectPath": "C:\\NETCORE\\DemoNetCore\\DemoNetCore.csproj",
-        "packagesPath": "C:\\Users\\LAPTOPSN\\.nuget\\packages\\",
-        "outputPath": "C:\\NETCORE\\DemoNetCore\\obj\\",
+        "projectPath": "C:\\Users\\HI\\Documents\\MaNguonMo\\NetCore\\DemoNetCore.csproj",
+        "packagesPath": "C:\\Users\\HI\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\HI\\Documents\\MaNguonMo\\NetCore\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\LAPTOPSN\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\HI\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -77,7 +75,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.209\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
         }
       }
     }
