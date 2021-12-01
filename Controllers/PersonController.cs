@@ -1,3 +1,4 @@
+using System.Reflection;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,6 +14,7 @@ namespace DemoNetCore.Controllers
     public class PersonController : Controller
     {
         private readonly MvcMovieContext _context;
+        private readonly StringProcess strPr = new StringProcess ();
 
         public PersonController(MvcMovieContext context)
         {
@@ -53,8 +55,15 @@ namespace DemoNetCore.Controllers
         // GET: Person/Create
         public IActionResult Create()
         {
+            var model = _context.Person.ToList();
+            if (model.Count() == 0)
+                ViewBag.PersonKey = "K001";
+            else {
+                var newKey = model.OrderByDescending (m => m.Id).FirstOrDefault().Id;
+                ViewBag.PersonKey = strPr.GenerateKey(newKey);
+            }
             return View();
-        }
+        }   
 
         // POST: Person/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.

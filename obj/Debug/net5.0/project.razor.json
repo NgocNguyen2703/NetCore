@@ -1,5 +1,5 @@
 {
-  "FilePath": "c:\\NETCORE\\DemoNetCore\\DemoNetCore.csproj",
+  "FilePath": "c:\\Users\\HI\\Documents\\MaNguonMo\\NetCore\\DemoNetCore.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "5.0",
@@ -15619,73 +15619,273 @@
   "RootNamespace": "DemoNetCore",
   "Documents": [
     {
-      "FilePath": "c:\\NETCORE\\DemoNetCore\\Views\\HelloWorld\\Index.cshtml",
-      "TargetPath": "Views\\HelloWorld\\Index.cshtml",
+      "FilePath": "c:\\Users\\HI\\Documents\\MaNguonMo\\NetCore\\Views\\Student\\Create.cshtml",
+      "TargetPath": "Views\\Student\\Create.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\NETCORE\\DemoNetCore\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
-      "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FilePath": "c:\\Users\\HI\\Documents\\MaNguonMo\\NetCore\\Views\\Employeet\\Create.cshtml",
+      "TargetPath": "Views\\Employeet\\Create.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\NETCORE\\DemoNetCore\\Views\\Movies\\Details.cshtml",
+      "FilePath": "c:\\Users\\HI\\Documents\\MaNguonMo\\NetCore\\Views\\Movies\\Details.cshtml",
       "TargetPath": "Views\\Movies\\Details.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\NETCORE\\DemoNetCore\\Views\\Movies\\Edit.cshtml",
+      "FilePath": "c:\\Users\\HI\\Documents\\MaNguonMo\\NetCore\\Views\\PhieuXuat\\Create.cshtml",
+      "TargetPath": "Views\\PhieuXuat\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\HI\\Documents\\MaNguonMo\\NetCore\\Views\\Product\\Index.cshtml",
+      "TargetPath": "Views\\Product\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\HI\\Documents\\MaNguonMo\\NetCore\\Views\\DonHang\\Delete.cshtml",
+      "TargetPath": "Views\\DonHang\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\HI\\Documents\\MaNguonMo\\NetCore\\Views\\HoaDon\\Edit.cshtml",
+      "TargetPath": "Views\\HoaDon\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\HI\\Documents\\MaNguonMo\\NetCore\\Views\\KetQua\\Create.cshtml",
+      "TargetPath": "Views\\KetQua\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\HI\\Documents\\MaNguonMo\\NetCore\\Views\\Product\\Delete.cshtml",
+      "TargetPath": "Views\\Product\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\HI\\Documents\\MaNguonMo\\NetCore\\Views\\Movies\\Edit.cshtml",
       "TargetPath": "Views\\Movies\\Edit.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\NETCORE\\DemoNetCore\\Views\\_ViewStart.cshtml",
+      "FilePath": "c:\\Users\\HI\\Documents\\MaNguonMo\\NetCore\\Views\\Product\\Create.cshtml",
+      "TargetPath": "Views\\Product\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\HI\\Documents\\MaNguonMo\\NetCore\\Views\\DonHang\\Details.cshtml",
+      "TargetPath": "Views\\DonHang\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\HI\\Documents\\MaNguonMo\\NetCore\\Views\\_ViewStart.cshtml",
       "TargetPath": "Views\\_ViewStart.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\NETCORE\\DemoNetCore\\Views\\Home\\Privacy.cshtml",
-      "TargetPath": "Views\\Home\\Privacy.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\NETCORE\\DemoNetCore\\Views\\Movies\\Index.cshtml",
-      "TargetPath": "Views\\Movies\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\NETCORE\\DemoNetCore\\Views\\Movies\\Create.cshtml",
-      "TargetPath": "Views\\Movies\\Create.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\NETCORE\\DemoNetCore\\Views\\Shared\\Error.cshtml",
-      "TargetPath": "Views\\Shared\\Error.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\NETCORE\\DemoNetCore\\Views\\Movies\\Delete.cshtml",
-      "TargetPath": "Views\\Movies\\Delete.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\NETCORE\\DemoNetCore\\Views\\_ViewImports.cshtml",
-      "TargetPath": "Views\\_ViewImports.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\NETCORE\\DemoNetCore\\Views\\HelloWorld\\Welcome.cshtml",
-      "TargetPath": "Views\\HelloWorld\\Welcome.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\NETCORE\\DemoNetCore\\Views\\Home\\Index.cshtml",
+      "FilePath": "c:\\Users\\HI\\Documents\\MaNguonMo\\NetCore\\Views\\Home\\Index.cshtml",
       "TargetPath": "Views\\Home\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\NETCORE\\DemoNetCore\\Views\\Shared\\_Layout.cshtml",
+      "FilePath": "c:\\Users\\HI\\Documents\\MaNguonMo\\NetCore\\Views\\Employeet\\Details.cshtml",
+      "TargetPath": "Views\\Employeet\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\HI\\Documents\\MaNguonMo\\NetCore\\Views\\_ViewImports.cshtml",
+      "TargetPath": "Views\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\HI\\Documents\\MaNguonMo\\NetCore\\Views\\Student\\Index.cshtml",
+      "TargetPath": "Views\\Student\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\HI\\Documents\\MaNguonMo\\NetCore\\Views\\Person\\Details.cshtml",
+      "TargetPath": "Views\\Person\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\HI\\Documents\\MaNguonMo\\NetCore\\Views\\Person\\Create.cshtml",
+      "TargetPath": "Views\\Person\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\HI\\Documents\\MaNguonMo\\NetCore\\Views\\Shared\\Error.cshtml",
+      "TargetPath": "Views\\Shared\\Error.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\HI\\Documents\\MaNguonMo\\NetCore\\Views\\HelloWorld\\Welcome.cshtml",
+      "TargetPath": "Views\\HelloWorld\\Welcome.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\HI\\Documents\\MaNguonMo\\NetCore\\Views\\Person\\Edit.cshtml",
+      "TargetPath": "Views\\Person\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\HI\\Documents\\MaNguonMo\\NetCore\\Views\\KetQua\\Index.cshtml",
+      "TargetPath": "Views\\KetQua\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\HI\\Documents\\MaNguonMo\\NetCore\\Views\\Employeet\\Edit.cshtml",
+      "TargetPath": "Views\\Employeet\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\HI\\Documents\\MaNguonMo\\NetCore\\Views\\Movies\\Create.cshtml",
+      "TargetPath": "Views\\Movies\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\HI\\Documents\\MaNguonMo\\NetCore\\Views\\Student\\Edit.cshtml",
+      "TargetPath": "Views\\Student\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\HI\\Documents\\MaNguonMo\\NetCore\\Views\\Shared\\_Layout.cshtml",
       "TargetPath": "Views\\Shared\\_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\HI\\Documents\\MaNguonMo\\NetCore\\Views\\KetQua\\Delete.cshtml",
+      "TargetPath": "Views\\KetQua\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\HI\\Documents\\MaNguonMo\\NetCore\\Views\\HoaDon\\Details.cshtml",
+      "TargetPath": "Views\\HoaDon\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\HI\\Documents\\MaNguonMo\\NetCore\\Views\\PhieuXuat\\Index.cshtml",
+      "TargetPath": "Views\\PhieuXuat\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\HI\\Documents\\MaNguonMo\\NetCore\\Views\\Person\\Index.cshtml",
+      "TargetPath": "Views\\Person\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\HI\\Documents\\MaNguonMo\\NetCore\\Views\\DonHang\\Create.cshtml",
+      "TargetPath": "Views\\DonHang\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\HI\\Documents\\MaNguonMo\\NetCore\\Views\\Employeet\\Index.cshtml",
+      "TargetPath": "Views\\Employeet\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\HI\\Documents\\MaNguonMo\\NetCore\\Views\\HoaDon\\Index.cshtml",
+      "TargetPath": "Views\\HoaDon\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\HI\\Documents\\MaNguonMo\\NetCore\\Views\\DonHang\\Index.cshtml",
+      "TargetPath": "Views\\DonHang\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\HI\\Documents\\MaNguonMo\\NetCore\\Views\\Student\\Delete.cshtml",
+      "TargetPath": "Views\\Student\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\HI\\Documents\\MaNguonMo\\NetCore\\Views\\DonHang\\Edit.cshtml",
+      "TargetPath": "Views\\DonHang\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\HI\\Documents\\MaNguonMo\\NetCore\\Views\\HoaDon\\Delete.cshtml",
+      "TargetPath": "Views\\HoaDon\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\HI\\Documents\\MaNguonMo\\NetCore\\Views\\HelloWorld\\Index.cshtml",
+      "TargetPath": "Views\\HelloWorld\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\HI\\Documents\\MaNguonMo\\NetCore\\Views\\Employeet\\Delete.cshtml",
+      "TargetPath": "Views\\Employeet\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\HI\\Documents\\MaNguonMo\\NetCore\\Views\\KetQua\\Edit.cshtml",
+      "TargetPath": "Views\\KetQua\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\HI\\Documents\\MaNguonMo\\NetCore\\Views\\PhieuXuat\\Edit.cshtml",
+      "TargetPath": "Views\\PhieuXuat\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\HI\\Documents\\MaNguonMo\\NetCore\\Views\\Student\\Details.cshtml",
+      "TargetPath": "Views\\Student\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\HI\\Documents\\MaNguonMo\\NetCore\\Views\\Home\\Privacy.cshtml",
+      "TargetPath": "Views\\Home\\Privacy.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\HI\\Documents\\MaNguonMo\\NetCore\\Views\\KetQua\\Details.cshtml",
+      "TargetPath": "Views\\KetQua\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\HI\\Documents\\MaNguonMo\\NetCore\\Views\\Movies\\Delete.cshtml",
+      "TargetPath": "Views\\Movies\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\HI\\Documents\\MaNguonMo\\NetCore\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\HI\\Documents\\MaNguonMo\\NetCore\\Views\\Person\\Delete.cshtml",
+      "TargetPath": "Views\\Person\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\HI\\Documents\\MaNguonMo\\NetCore\\Views\\HoaDon\\Create.cshtml",
+      "TargetPath": "Views\\HoaDon\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\HI\\Documents\\MaNguonMo\\NetCore\\Views\\PhieuXuat\\Details.cshtml",
+      "TargetPath": "Views\\PhieuXuat\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\HI\\Documents\\MaNguonMo\\NetCore\\Views\\Movies\\Index.cshtml",
+      "TargetPath": "Views\\Movies\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\HI\\Documents\\MaNguonMo\\NetCore\\Views\\Product\\Details.cshtml",
+      "TargetPath": "Views\\Product\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\HI\\Documents\\MaNguonMo\\NetCore\\Views\\PhieuXuat\\Delete.cshtml",
+      "TargetPath": "Views\\PhieuXuat\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\HI\\Documents\\MaNguonMo\\NetCore\\Views\\Product\\Edit.cshtml",
+      "TargetPath": "Views\\Product\\Edit.cshtml",
       "FileKind": "mvc"
     }
   ],
