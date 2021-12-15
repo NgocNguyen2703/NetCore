@@ -6,7 +6,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace NETCORE.Models
 {
     [Table("Movies")]
-    public class Movie
+    public class Movie: StringProcessNTN535
     {
         public int Id { get; set; }
 

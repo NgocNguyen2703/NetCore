@@ -14,7 +14,7 @@ namespace DemoNetCore.Controllers
     public class PersonController : Controller
     {
         private readonly MvcMovieContext _context;
-        private readonly StringProcess strPr = new StringProcess ();
+        private readonly StringProcess strPro = new StringProcess ();
 
         public PersonController(MvcMovieContext context)
         {
@@ -60,7 +60,7 @@ namespace DemoNetCore.Controllers
                 ViewBag.PersonKey = "K001";
             else {
                 var newKey = model.OrderByDescending (m => m.Id).FirstOrDefault().Id;
-                ViewBag.PersonKey = strPr.GenerateKey(newKey);
+                ViewBag.PersonKey = strPro.GenerateKey(newKey);
             }
             return View();
         }   
